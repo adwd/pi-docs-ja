@@ -1,0 +1,2 @@
+# Preserve source bytes, including Markdown hard breaks and whitespace in code.
+content/** -text -whitespace

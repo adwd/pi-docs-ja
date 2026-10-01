@@ -1,0 +1,2804 @@
+{
+  "schemaVersion": 1,
+  "repository": "earendil-works/pi",
+  "docsPath": "packages/coding-agent/docs",
+  "commit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+  "inputFingerprint": "6c6ddcbb8da3634dbd028be53f2560190d8dc4deb3d8f488b3b484a8d2c87029",
+  "promptVersion": 1,
+  "syncedAt": "2026-10-01T12:42:02.712Z",
+  "translationModel": "gpt-5.6-sol",
+  "reviewModel": "gpt-5.6-sol",
+  "glossaryHash": "f3b18659e2dd6768ce2ac120a5edb68cff0dd83a6780b79545d65b5bb0cdbdcc",
+  "pages": {
+    "index.md": {
+      "sourceHash": "4842600756741fd249d63759e5cb7bbb183776eda566c0aba7925f590a3ef284",
+      "translationHash": "219bc0a34acd109e530061c69b9c0b9b6beb35cd7ff7fac4af0b6c0f4bc4f0cc",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Pi",
+          "id": "pi"
+        },
+        {
+          "depth": 2,
+          "text": "Start using Pi",
+          "id": "start-using-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Customize Pi",
+          "id": "customize-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Automate or embed Pi",
+          "id": "automate-or-embed-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Find reference and setup information",
+          "id": "find-reference-and-setup-information"
+        },
+        {
+          "depth": 2,
+          "text": "Work safely",
+          "id": "work-safely"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Pi",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:34:33.753Z"
+    },
+    "quickstart.md": {
+      "sourceHash": "3e406c9d241073cd9f231e9dd596270d61a8b81e7b88a03801696b6b80a3b689",
+      "translationHash": "cb2f64d3eb50449b2efb23abb6d20c7f6eb7b78716b6e6e682fd8d36f7cc2f4e",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Quickstart",
+          "id": "quickstart"
+        },
+        {
+          "depth": 2,
+          "text": "1. Install Pi",
+          "id": "1-install-pi"
+        },
+        {
+          "depth": 2,
+          "text": "2. Start Pi",
+          "id": "2-start-pi"
+        },
+        {
+          "depth": 2,
+          "text": "3. Choose a model",
+          "id": "3-choose-a-model"
+        },
+        {
+          "depth": 2,
+          "text": "4. Give Pi a task",
+          "id": "4-give-pi-a-task"
+        },
+        {
+          "depth": 2,
+          "text": "Continue later",
+          "id": "continue-later"
+        },
+        {
+          "depth": 2,
+          "text": "Next steps",
+          "id": "next-steps"
+        },
+        {
+          "depth": 3,
+          "text": "Choose how to customize Pi",
+          "id": "choose-how-to-customize-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Uninstall Pi",
+          "id": "uninstall-pi"
+        }
+      ],
+      "imageAlts": {
+        "Pi running in a terminal with a conversation, input editor, and status footer": "ターミナル上で動作する Pi。会話、入力エディター、ステータスフッターが表示されています"
+      },
+      "title": "クイックスタート",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:19:34.494Z"
+    },
+    "how-pi-works.md": {
+      "sourceHash": "7d43ab8e2b886cd1047dcee503588a1c828b92333dd4f177526b89e6db8aaa8b",
+      "translationHash": "0be371257a864fd6b1eb16dde681cd759bff6efedee23283d1407b6973d87843",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "How Pi Works",
+          "id": "how-pi-works"
+        },
+        {
+          "depth": 2,
+          "text": "Agent loop",
+          "id": "agent-loop"
+        },
+        {
+          "depth": 2,
+          "text": "Context",
+          "id": "context"
+        },
+        {
+          "depth": 2,
+          "text": "Sessions",
+          "id": "sessions"
+        },
+        {
+          "depth": 2,
+          "text": "Interfaces",
+          "id": "interfaces"
+        },
+        {
+          "depth": 2,
+          "text": "Extensions and resources",
+          "id": "extensions-and-resources"
+        },
+        {
+          "depth": 2,
+          "text": "Trust and permissions",
+          "id": "trust-and-permissions"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Pi の仕組み",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:35:59.085Z"
+    },
+    "usage.md": {
+      "sourceHash": "a2dda66c065ff20f6a6c05b084076abef276fe02b11f1d604b9fdd8b891f0c4a",
+      "translationHash": "880834d75c923bf6e7da7931fe45f1ddac0b0a157ec65d49988679e365d1a424",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Use Pi in the terminal",
+          "id": "use-pi-in-the-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Enter a prompt",
+          "id": "enter-a-prompt"
+        },
+        {
+          "depth": 2,
+          "text": "Follow Pi's work",
+          "id": "follow-pis-work"
+        },
+        {
+          "depth": 2,
+          "text": "Change direction",
+          "id": "change-direction"
+        },
+        {
+          "depth": 2,
+          "text": "Change the model or settings",
+          "id": "change-the-model-or-settings"
+        },
+        {
+          "depth": 2,
+          "text": "Continue or start over",
+          "id": "continue-or-start-over"
+        },
+        {
+          "depth": 2,
+          "text": "Run a terminal command",
+          "id": "run-a-terminal-command"
+        },
+        {
+          "depth": 2,
+          "text": "Copy, export, or share results",
+          "id": "copy-export-or-share-results"
+        },
+        {
+          "depth": 2,
+          "text": "Adjust the terminal",
+          "id": "adjust-the-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Collect diagnostic information",
+          "id": "collect-diagnostic-information"
+        }
+      ],
+      "imageAlts": {
+        "Pi interactive mode showing a conversation, editor, and status information": "会話、エディター、ステータス情報を表示する Pi の対話モード"
+      },
+      "title": "ターミナルで Pi を使用する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:19:44.891Z"
+    },
+    "models.md": {
+      "sourceHash": "7132c6c5130a83b0c427db105e8b35fe38390f1e0d43afca0d3bb5898ad0bd71",
+      "translationHash": "6c281045eb7257fdc65e2868911dec563b5ccd7070b34e2a4f3fbe4d7b70ed5d",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Choose a Model",
+          "id": "choose-a-model"
+        },
+        {
+          "depth": 2,
+          "text": "Choose a connection",
+          "id": "choose-a-connection"
+        },
+        {
+          "depth": 2,
+          "text": "Authenticate",
+          "id": "authenticate"
+        },
+        {
+          "depth": 2,
+          "text": "Select a model",
+          "id": "select-a-model"
+        },
+        {
+          "depth": 2,
+          "text": "Connect local models",
+          "id": "connect-local-models"
+        },
+        {
+          "depth": 2,
+          "text": "Configure a compatible endpoint",
+          "id": "configure-a-compatible-endpoint"
+        },
+        {
+          "depth": 3,
+          "text": "Describe model input and caching",
+          "id": "describe-model-input-and-caching"
+        },
+        {
+          "depth": 2,
+          "text": "Use classifier models",
+          "id": "use-classifier-models"
+        },
+        {
+          "depth": 2,
+          "text": "Add a custom provider",
+          "id": "add-a-custom-provider"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "id": "troubleshooting"
+        },
+        {
+          "depth": 3,
+          "text": "A model does not appear",
+          "id": "a-model-does-not-appear"
+        },
+        {
+          "depth": 3,
+          "text": "Authentication works in one shell only",
+          "id": "authentication-works-in-one-shell-only"
+        },
+        {
+          "depth": 3,
+          "text": "Sign-in opens a browser on a remote machine",
+          "id": "sign-in-opens-a-browser-on-a-remote-machine"
+        },
+        {
+          "depth": 3,
+          "text": "A compatible endpoint rejects requests",
+          "id": "a-compatible-endpoint-rejects-requests"
+        }
+      ],
+      "imageAlts": {},
+      "title": "モデルを選択する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:38:17.995Z"
+    },
+    "sessions.md": {
+      "sourceHash": "5ad5bda19caaa0794bb44f86c85c8e66be6f493c52bb5e6a4d127b58cd8c2c1e",
+      "translationHash": "6a5a4f736f2fcba933f80609a83f99dd6f4bcfe32ae5615b515cc397d002b56e",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Sessions and Context",
+          "id": "sessions-and-context"
+        },
+        {
+          "depth": 2,
+          "text": "Continue or switch sessions",
+          "id": "continue-or-switch-sessions"
+        },
+        {
+          "depth": 2,
+          "text": "Choose how to branch",
+          "id": "choose-how-to-branch"
+        },
+        {
+          "depth": 2,
+          "text": "Manage conversation context",
+          "id": "manage-conversation-context"
+        },
+        {
+          "depth": 2,
+          "text": "Control session storage",
+          "id": "control-session-storage"
+        },
+        {
+          "depth": 2,
+          "text": "Export or share a session",
+          "id": "export-or-share-a-session"
+        },
+        {
+          "depth": 2,
+          "text": "Report a bug",
+          "id": "report-a-bug"
+        }
+      ],
+      "imageAlts": {},
+      "title": "セッションとコンテキスト",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:39:19.482Z"
+    },
+    "security.md": {
+      "sourceHash": "3b1e40a8d28b17c9eb7e496a7ba88fbe04665e3e6ae02873a58b943e325ad504",
+      "translationHash": "b9ab5395cd815f50d5fc2088c455abf90710c7a68f895c8c268555e346d0c379",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Run Pi safely",
+          "id": "run-pi-safely"
+        },
+        {
+          "depth": 2,
+          "text": "Choose how to run Pi",
+          "id": "choose-how-to-run-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Understand project trust",
+          "id": "understand-project-trust"
+        },
+        {
+          "depth": 3,
+          "text": "Resources protected by project trust",
+          "id": "resources-protected-by-project-trust"
+        },
+        {
+          "depth": 3,
+          "text": "How Pi chooses a trust decision",
+          "id": "how-pi-chooses-a-trust-decision"
+        },
+        {
+          "depth": 3,
+          "text": "Project trust without an interactive prompt",
+          "id": "project-trust-without-an-interactive-prompt"
+        },
+        {
+          "depth": 2,
+          "text": "Reduce impact and improve recovery",
+          "id": "reduce-impact-and-improve-recovery"
+        },
+        {
+          "depth": 2,
+          "text": "Report a security issue",
+          "id": "report-a-security-issue"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Pi を安全に実行する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:41:34.932Z"
+    },
+    "containerization.md": {
+      "sourceHash": "e309fcb9a0a7592c0dba000ef8ee90f2d7ef1e01e6a1ac2f0cd9760dd63dee0c",
+      "translationHash": "4f2926730f1b752b4b8a16a6decfa90fa6bfc1ee40ecaf61d0b78035e01ab17f",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Run Pi in an isolated environment",
+          "id": "run-pi-in-an-isolated-environment"
+        },
+        {
+          "depth": 2,
+          "text": "Choose an isolation method",
+          "id": "choose-an-isolation-method"
+        },
+        {
+          "depth": 2,
+          "text": "Decide what Pi can access",
+          "id": "decide-what-pi-can-access"
+        },
+        {
+          "depth": 2,
+          "text": "Run Pi in plain Docker",
+          "id": "run-pi-in-plain-docker"
+        },
+        {
+          "depth": 3,
+          "text": "Build the image",
+          "id": "build-the-image"
+        },
+        {
+          "depth": 3,
+          "text": "Start Pi",
+          "id": "start-pi"
+        },
+        {
+          "depth": 3,
+          "text": "Verify the workspace",
+          "id": "verify-the-workspace"
+        },
+        {
+          "depth": 2,
+          "text": "Run Pi with Docker Sandboxes",
+          "id": "run-pi-with-docker-sandboxes"
+        },
+        {
+          "depth": 3,
+          "text": "Use a Claude Pro or Max token",
+          "id": "use-a-claude-pro-or-max-token"
+        },
+        {
+          "depth": 3,
+          "text": "Start Pi",
+          "id": "start-pi-1"
+        },
+        {
+          "depth": 2,
+          "text": "Run Pi with OpenShell",
+          "id": "run-pi-with-openshell"
+        },
+        {
+          "depth": 3,
+          "text": "Select a gateway",
+          "id": "select-a-gateway"
+        },
+        {
+          "depth": 3,
+          "text": "Create the sandbox",
+          "id": "create-the-sandbox"
+        },
+        {
+          "depth": 3,
+          "text": "Transfer files to a remote sandbox",
+          "id": "transfer-files-to-a-remote-sandbox"
+        },
+        {
+          "depth": 2,
+          "text": "Route tools through Gondolin",
+          "id": "route-tools-through-gondolin"
+        },
+        {
+          "depth": 3,
+          "text": "Install the extension",
+          "id": "install-the-extension"
+        },
+        {
+          "depth": 3,
+          "text": "Start Pi",
+          "id": "start-pi-2"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Pi を隔離環境で実行する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:42:36.162Z"
+    },
+    "llama-cpp.md": {
+      "sourceHash": "636e994b9714c8f9264d25e14f4335e72b31f9b8d72c33c0c88f4e609f5813df",
+      "translationHash": "5f48802ef95e978af0126e7d2ec75f62b1805f6f6f235c6e08fe75b16a66c640",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Local Models with llama.cpp",
+          "id": "local-models-with-llamacpp"
+        },
+        {
+          "depth": 2,
+          "text": "Start the router",
+          "id": "start-the-router"
+        },
+        {
+          "depth": 2,
+          "text": "Configure Pi",
+          "id": "configure-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Manage models",
+          "id": "manage-models"
+        },
+        {
+          "depth": 2,
+          "text": "Classification",
+          "id": "classification"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "id": "troubleshooting"
+        }
+      ],
+      "imageAlts": {},
+      "title": "llama.cpp によるローカルモデル",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:43:36.585Z"
+    },
+    "terminal-setup.md": {
+      "sourceHash": "4e8d12211c8ac33b01d9d7b5e572a84b1b45ac651989321bd476f81515d4bc5a",
+      "translationHash": "72f89ab5f9fa83bedd4f6e8be3086584a165c2abd4d154d31e3b315d9b01ab6e",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Configure your terminal",
+          "id": "configure-your-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "id": "troubleshooting"
+        },
+        {
+          "depth": 2,
+          "text": "Kitty",
+          "id": "kitty"
+        },
+        {
+          "depth": 2,
+          "text": "iTerm2",
+          "id": "iterm2"
+        },
+        {
+          "depth": 3,
+          "text": "Fix slow fullscreen scrolling",
+          "id": "fix-slow-fullscreen-scrolling"
+        },
+        {
+          "depth": 2,
+          "text": "Apple Terminal",
+          "id": "apple-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Ghostty",
+          "id": "ghostty"
+        },
+        {
+          "depth": 3,
+          "text": "Open links in fullscreen mode",
+          "id": "open-links-in-fullscreen-mode"
+        },
+        {
+          "depth": 2,
+          "text": "WezTerm",
+          "id": "wezterm"
+        },
+        {
+          "depth": 3,
+          "text": "Forward Alt+Enter on macOS",
+          "id": "forward-altenter-on-macos"
+        },
+        {
+          "depth": 3,
+          "text": "Position an IME candidate window in WSL",
+          "id": "position-an-ime-candidate-window-in-wsl"
+        },
+        {
+          "depth": 2,
+          "text": "Alacritty",
+          "id": "alacritty"
+        },
+        {
+          "depth": 2,
+          "text": "VS Code integrated terminal",
+          "id": "vs-code-integrated-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Zed integrated terminal",
+          "id": "zed-integrated-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Windows Terminal",
+          "id": "windows-terminal"
+        },
+        {
+          "depth": 3,
+          "text": "Forward Shift+Enter",
+          "id": "forward-shiftenter"
+        },
+        {
+          "depth": 3,
+          "text": "Use Alt+Enter for follow-ups",
+          "id": "use-altenter-for-follow-ups"
+        },
+        {
+          "depth": 2,
+          "text": "xfce4-terminal and Terminator",
+          "id": "xfce4-terminal-and-terminator"
+        },
+        {
+          "depth": 2,
+          "text": "IntelliJ IDEA integrated terminal",
+          "id": "intellij-idea-integrated-terminal"
+        },
+        {
+          "depth": 2,
+          "text": "Override detected capabilities",
+          "id": "override-detected-capabilities"
+        }
+      ],
+      "imageAlts": {},
+      "title": "ターミナルを設定する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:44:48.583Z"
+    },
+    "shell-aliases.md": {
+      "sourceHash": "ebb55456870455b4da91cfd054ae2ac9b3a417e6ff48a009587c33e68ecd7807",
+      "translationHash": "cc3551efe9cd37c06f56c2526c7e16ae4162855f3e52d03bd6be391a06bccb22",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Configure shell commands",
+          "id": "configure-shell-commands"
+        },
+        {
+          "depth": 2,
+          "text": "Understand which shell Pi uses",
+          "id": "understand-which-shell-pi-uses"
+        },
+        {
+          "depth": 2,
+          "text": "Choose a Bash executable",
+          "id": "choose-a-bash-executable"
+        },
+        {
+          "depth": 2,
+          "text": "Run setup before every Bash command",
+          "id": "run-setup-before-every-bash-command"
+        },
+        {
+          "depth": 2,
+          "text": "Enable Bash aliases",
+          "id": "enable-bash-aliases"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "id": "troubleshooting"
+        },
+        {
+          "depth": 3,
+          "text": "The prefix works for ! but not for an extension tool",
+          "id": "the-prefix-works-for--but-not-for-an-extension-tool"
+        },
+        {
+          "depth": 3,
+          "text": "shopt is not found",
+          "id": "shopt-is-not-found"
+        },
+        {
+          "depth": 3,
+          "text": "A setup command waits for input",
+          "id": "a-setup-command-waits-for-input"
+        }
+      ],
+      "imageAlts": {},
+      "title": "シェルコマンドを設定する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:45:24.161Z"
+    },
+    "tmux.md": {
+      "sourceHash": "9ec0abdbf74c57d51d4a93f308fb4aec4d8a3574a24cbfd9ba481d2e39f1273c",
+      "translationHash": "72b4c64c9a31d5c4a68f0b552e828b9d38daa16bad04bbe01fb34f6a56817560",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Run Pi in tmux",
+          "id": "run-pi-in-tmux"
+        },
+        {
+          "depth": 2,
+          "text": "Check your tmux version",
+          "id": "check-your-tmux-version"
+        },
+        {
+          "depth": 2,
+          "text": "Enable extended keys in tmux 3.5 or newer",
+          "id": "enable-extended-keys-in-tmux-35-or-newer"
+        },
+        {
+          "depth": 2,
+          "text": "Restart tmux",
+          "id": "restart-tmux"
+        },
+        {
+          "depth": 2,
+          "text": "Verify modified keys",
+          "id": "verify-modified-keys"
+        },
+        {
+          "depth": 2,
+          "text": "Use tmux 3.2 through 3.4",
+          "id": "use-tmux-32-through-34"
+        }
+      ],
+      "imageAlts": {},
+      "title": "tmux で Pi を実行する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:45:48.879Z"
+    },
+    "windows.md": {
+      "sourceHash": "6e05d30d8d4ade81f6c453b98538d98188cecbc1d4aa81750c6d690c486eeea1",
+      "translationHash": "4476ef377be7c36b065c0da8a2a9a4e29615a0b5e2c5eb8ebcb8235a5cdbae7a",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Run Pi on Windows",
+          "id": "run-pi-on-windows"
+        },
+        {
+          "depth": 2,
+          "text": "Choose native Windows or WSL",
+          "id": "choose-native-windows-or-wsl"
+        },
+        {
+          "depth": 2,
+          "text": "Use Git Bash on native Windows",
+          "id": "use-git-bash-on-native-windows"
+        },
+        {
+          "depth": 2,
+          "text": "Let the model use PowerShell",
+          "id": "let-the-model-use-powershell"
+        },
+        {
+          "depth": 2,
+          "text": "Use a custom Bash executable",
+          "id": "use-a-custom-bash-executable"
+        },
+        {
+          "depth": 2,
+          "text": "Configure Windows Terminal",
+          "id": "configure-windows-terminal"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Windows で Pi を実行する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:47:06.335Z"
+    },
+    "termux.md": {
+      "sourceHash": "1b0687157f2384385d07800ec23e6c225ef28fbf6648f55453cc7ce62f4c64ea",
+      "translationHash": "2cf7236ed6f0d9764154341c571491053d672e0d715f7c4ccc751674fa072361",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Run Pi on Android with Termux",
+          "id": "run-pi-on-android-with-termux"
+        },
+        {
+          "depth": 2,
+          "text": "Before you begin",
+          "id": "before-you-begin"
+        },
+        {
+          "depth": 2,
+          "text": "Install Pi",
+          "id": "install-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Access Android shared storage",
+          "id": "access-android-shared-storage"
+        },
+        {
+          "depth": 2,
+          "text": "Use clipboard commands",
+          "id": "use-clipboard-commands"
+        },
+        {
+          "depth": 2,
+          "text": "Add Termux-specific instructions",
+          "id": "add-termux-specific-instructions"
+        },
+        {
+          "depth": 2,
+          "text": "Troubleshooting",
+          "id": "troubleshooting"
+        },
+        {
+          "depth": 3,
+          "text": "Clipboard integration fails",
+          "id": "clipboard-integration-fails"
+        },
+        {
+          "depth": 3,
+          "text": "Shared storage reports permission denied",
+          "id": "shared-storage-reports-permission-denied"
+        },
+        {
+          "depth": 3,
+          "text": "Pi is not found after installation",
+          "id": "pi-is-not-found-after-installation"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Termux で Android 上の Pi を実行する",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:47:45.761Z"
+    },
+    "configuration.md": {
+      "sourceHash": "fc48d1ce7d885c5253222415fb7a4b46d75f80e6431eb924174657ff775099eb",
+      "translationHash": "ad24e3e1a72b596b6d46bdc7f48f86d3fc8456b92cf126553ef416c0acf912a6",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Configuration",
+          "id": "configuration"
+        },
+        {
+          "depth": 2,
+          "text": "Agent directory",
+          "id": "agent-directory"
+        },
+        {
+          "depth": 2,
+          "text": "Project .pi directory",
+          "id": "project-pi-directory"
+        },
+        {
+          "depth": 2,
+          "text": "Context files",
+          "id": "context-files"
+        }
+      ],
+      "imageAlts": {},
+      "title": "設定",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:48:22.306Z"
+    },
+    "prompt-templates.md": {
+      "sourceHash": "ad5113cce0d05ef0ac77b3c71f9ebe41ea68c072275f9273b9616e4924feda42",
+      "translationHash": "43c17e5c63dcf9c7fdf0b1de7f21454928974a700872dc5d0aecbaf3459e4671",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Prompt Templates",
+          "id": "prompt-templates"
+        },
+        {
+          "depth": 2,
+          "text": "Create a template",
+          "id": "create-a-template"
+        },
+        {
+          "depth": 2,
+          "text": "Use a template",
+          "id": "use-a-template"
+        },
+        {
+          "depth": 2,
+          "text": "Add it to Pi",
+          "id": "add-it-to-pi"
+        }
+      ],
+      "imageAlts": {},
+      "title": "プロンプトテンプレート",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:48:54.295Z"
+    },
+    "skills.md": {
+      "sourceHash": "5b9805525b194474ef1fe5455a0917ef15ed7f710aa9bec2eee11879556469e5",
+      "translationHash": "4be6ca1b691e786f54e43ce064312b6debfaee4d09cbf1a20417c5a2981b51df",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Skills",
+          "id": "skills"
+        },
+        {
+          "depth": 2,
+          "text": "Create a skill",
+          "id": "create-a-skill"
+        },
+        {
+          "depth": 2,
+          "text": "Understand how skills load",
+          "id": "understand-how-skills-load"
+        },
+        {
+          "depth": 2,
+          "text": "Add it to Pi",
+          "id": "add-it-to-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Write portable frontmatter",
+          "id": "write-portable-frontmatter"
+        },
+        {
+          "depth": 2,
+          "text": "Validate and share a skill",
+          "id": "validate-and-share-a-skill"
+        }
+      ],
+      "imageAlts": {},
+      "title": "スキル",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:49:39.489Z"
+    },
+    "themes.md": {
+      "sourceHash": "cb4645f4a77c73b12f8edee22c46f0ea9ad32ce32fa6be81ae81cb08b424c889",
+      "translationHash": "a1ffda6a357f99df8ecedb463af767aeaf9d053c1eddf61177bb3592f65f51d7",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Customize Pi with themes",
+          "id": "customize-pi-with-themes"
+        },
+        {
+          "depth": 2,
+          "text": "Use your terminal's colors",
+          "id": "use-your-terminals-colors"
+        },
+        {
+          "depth": 2,
+          "text": "Choose a theme",
+          "id": "choose-a-theme"
+        },
+        {
+          "depth": 2,
+          "text": "Create a custom theme",
+          "id": "create-a-custom-theme"
+        },
+        {
+          "depth": 2,
+          "text": "Understand the theme file",
+          "id": "understand-the-theme-file"
+        },
+        {
+          "depth": 2,
+          "text": "Find the color to change",
+          "id": "find-the-color-to-change"
+        },
+        {
+          "depth": 2,
+          "text": "Load a theme from a project or package",
+          "id": "load-a-theme-from-a-project-or-package"
+        }
+      ],
+      "imageAlts": {},
+      "title": "テーマで Pi をカスタマイズする",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:50:53.893Z"
+    },
+    "packages.md": {
+      "sourceHash": "5fe4a3009d7260fe1e2f54b64086fc3c8b4d678232bfa2dbc7e91fe588fc9ea5",
+      "translationHash": "5b9a254b9221763845d0bf42c8b730dbea4c6068fb013ea574a222120d3bd1d5",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Pi Packages",
+          "id": "pi-packages"
+        },
+        {
+          "depth": 2,
+          "text": "Install and manage packages",
+          "id": "install-and-manage-packages"
+        },
+        {
+          "depth": 2,
+          "text": "Choose a source",
+          "id": "choose-a-source"
+        },
+        {
+          "depth": 2,
+          "text": "Create a package",
+          "id": "create-a-package"
+        },
+        {
+          "depth": 2,
+          "text": "Declare dependencies",
+          "id": "declare-dependencies"
+        },
+        {
+          "depth": 2,
+          "text": "Select package resources",
+          "id": "select-package-resources"
+        },
+        {
+          "depth": 2,
+          "text": "Understand scope and identity",
+          "id": "understand-scope-and-identity"
+        }
+      ],
+      "imageAlts": {},
+      "title": "Pi パッケージ",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:51:52.483Z"
+    },
+    "mcp.md": {
+      "sourceHash": "edccab4dc4876938605b3049bfa96533963227ba5aa931850f59bc19465eeb79",
+      "translationHash": "3f856e5c6df3197bed75335fc3f5926df0f9481709561fa1c2d42ba25907fefe",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "MCP Servers",
+          "id": "mcp-servers"
+        },
+        {
+          "depth": 2,
+          "text": "Quick setup",
+          "id": "quick-setup"
+        },
+        {
+          "depth": 2,
+          "text": "Configure servers",
+          "id": "configure-servers"
+        },
+        {
+          "depth": 3,
+          "text": "Configuration rules",
+          "id": "configuration-rules"
+        },
+        {
+          "depth": 3,
+          "text": "Inspect or change a server",
+          "id": "inspect-or-change-a-server"
+        },
+        {
+          "depth": 3,
+          "text": "Diagnose connection problems",
+          "id": "diagnose-connection-problems"
+        },
+        {
+          "depth": 2,
+          "text": "Migrate configuration from another client",
+          "id": "migrate-configuration-from-another-client"
+        },
+        {
+          "depth": 2,
+          "text": "Authenticate with OAuth",
+          "id": "authenticate-with-oauth"
+        },
+        {
+          "depth": 2,
+          "text": "Control tool exposure",
+          "id": "control-tool-exposure"
+        },
+        {
+          "depth": 2,
+          "text": "Use resources",
+          "id": "use-resources"
+        },
+        {
+          "depth": 2,
+          "text": "Permissions",
+          "id": "permissions"
+        },
+        {
+          "depth": 2,
+          "text": "Extensions and SDK",
+          "id": "extensions-and-sdk"
+        },
+        {
+          "depth": 3,
+          "text": "Add servers from extensions",
+          "id": "add-servers-from-extensions"
+        },
+        {
+          "depth": 3,
+          "text": "Replace the built-in MCP support",
+          "id": "replace-the-built-in-mcp-support"
+        },
+        {
+          "depth": 3,
+          "text": "Use MCP from the SDK",
+          "id": "use-mcp-from-the-sdk"
+        }
+      ],
+      "imageAlts": {},
+      "title": "MCP サーバー",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T11:57:00.518Z"
+    },
+    "extensions.md": {
+      "sourceHash": "26c7542e365fed7d6bd3f1d39b1ac38ef67c30ff1b714477ea49f97a3f7fde9c",
+      "translationHash": "0889d5adf89766cad9154839b393f3e93e6fbabb2737be19e29dad8f0a5b0a8b",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Extensions",
+          "id": "extensions"
+        },
+        {
+          "depth": 2,
+          "text": "Create and load an extension",
+          "id": "create-and-load-an-extension"
+        },
+        {
+          "depth": 2,
+          "text": "Add it to Pi",
+          "id": "add-it-to-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Respect the runtime lifecycle",
+          "id": "respect-the-runtime-lifecycle"
+        },
+        {
+          "depth": 2,
+          "text": "Choose an integration point",
+          "id": "choose-an-integration-point"
+        },
+        {
+          "depth": 2,
+          "text": "Follow the extension contracts",
+          "id": "follow-the-extension-contracts"
+        },
+        {
+          "depth": 3,
+          "text": "Events and concurrency",
+          "id": "events-and-concurrency"
+        },
+        {
+          "depth": 3,
+          "text": "Tools",
+          "id": "tools"
+        },
+        {
+          "depth": 3,
+          "text": "Tool exposure",
+          "id": "tool-exposure"
+        },
+        {
+          "depth": 3,
+          "text": "Activate tools dynamically",
+          "id": "activate-tools-dynamically"
+        },
+        {
+          "depth": 3,
+          "text": "MCP servers",
+          "id": "mcp-servers"
+        },
+        {
+          "depth": 3,
+          "text": "Context and session changes",
+          "id": "context-and-session-changes"
+        },
+        {
+          "depth": 3,
+          "text": "State",
+          "id": "state"
+        },
+        {
+          "depth": 3,
+          "text": "UI and modes",
+          "id": "ui-and-modes"
+        },
+        {
+          "depth": 3,
+          "text": "Errors and cleanup",
+          "id": "errors-and-cleanup"
+        },
+        {
+          "depth": 2,
+          "text": "Examples and reference",
+          "id": "examples-and-reference"
+        }
+      ],
+      "imageAlts": {},
+      "title": "拡張機能",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:02:03.620Z"
+    },
+    "custom-provider.md": {
+      "sourceHash": "5345ac346429a3862b46533ee810944b2c756079dcf5d3aad272ab579c58c129",
+      "translationHash": "ff5b3f48b7ee525317a64c400196b7d7207d85d14ff6e6ff6834cadf4c080a50",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Custom Providers",
+          "id": "custom-providers"
+        },
+        {
+          "depth": 2,
+          "text": "Choose the smallest integration",
+          "id": "choose-the-smallest-integration"
+        },
+        {
+          "depth": 2,
+          "text": "Register a provider",
+          "id": "register-a-provider"
+        },
+        {
+          "depth": 2,
+          "text": "Provide authentication",
+          "id": "provide-authentication"
+        },
+        {
+          "depth": 2,
+          "text": "Supply and refresh models",
+          "id": "supply-and-refresh-models"
+        },
+        {
+          "depth": 2,
+          "text": "Reuse a supported streaming API",
+          "id": "reuse-a-supported-streaming-api"
+        },
+        {
+          "depth": 2,
+          "text": "Implement custom streaming",
+          "id": "implement-custom-streaming"
+        },
+        {
+          "depth": 2,
+          "text": "Report failures and usage",
+          "id": "report-failures-and-usage"
+        },
+        {
+          "depth": 2,
+          "text": "Test the integration",
+          "id": "test-the-integration"
+        }
+      ],
+      "imageAlts": {},
+      "title": "カスタムプロバイダー",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:05:22.607Z"
+    },
+    "virtual-models.md": {
+      "sourceHash": "5ab04dee3b3712b317522bb0784e28a3fef2e6b7fe1aeb1c1ca27778685a38f7",
+      "translationHash": "3185b55f2b799541e06972a302d76d9069f0efda0b2b0af6fb8d43f809b60ba5",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Virtual Models",
+          "id": "virtual-models"
+        },
+        {
+          "depth": 2,
+          "text": "Selection and dispatch",
+          "id": "selection-and-dispatch"
+        },
+        {
+          "depth": 2,
+          "text": "Register a virtual model",
+          "id": "register-a-virtual-model"
+        },
+        {
+          "depth": 2,
+          "text": "Route requests",
+          "id": "route-requests"
+        },
+        {
+          "depth": 2,
+          "text": "Keep routing state",
+          "id": "keep-routing-state"
+        }
+      ],
+      "imageAlts": {},
+      "title": "仮想モデル",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:07:50.637Z"
+    },
+    "tui.md": {
+      "sourceHash": "2d3d61b6b385dea968c76984f118e5862750caad6a0bc94d104f6b4dee185673",
+      "translationHash": "5059bb26ad990ad86b41b6bb30d6913ba2b4ea20aa2c1253cbecec0541d08f42",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Terminal UI",
+          "id": "terminal-ui"
+        },
+        {
+          "depth": 2,
+          "text": "Choose an integration point",
+          "id": "choose-an-integration-point"
+        },
+        {
+          "depth": 2,
+          "text": "Understand the component model",
+          "id": "understand-the-component-model"
+        },
+        {
+          "depth": 2,
+          "text": "Compose built-in components",
+          "id": "compose-built-in-components"
+        },
+        {
+          "depth": 2,
+          "text": "Handle keyboard input and focus",
+          "id": "handle-keyboard-input-and-focus"
+        },
+        {
+          "depth": 2,
+          "text": "Handle mouse input",
+          "id": "handle-mouse-input"
+        },
+        {
+          "depth": 2,
+          "text": "Use custom screens and overlays",
+          "id": "use-custom-screens-and-overlays"
+        },
+        {
+          "depth": 2,
+          "text": "Apply themes correctly",
+          "id": "apply-themes-correctly"
+        },
+        {
+          "depth": 2,
+          "text": "Keep rendering responsive",
+          "id": "keep-rendering-responsive"
+        },
+        {
+          "depth": 2,
+          "text": "Examples and source",
+          "id": "examples-and-source"
+        }
+      ],
+      "imageAlts": {},
+      "title": "ターミナル UI",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:09:27.023Z"
+    },
+    "cli-integration.md": {
+      "sourceHash": "1596d0e7f1598b960d6e05cf6d44d762917348a92ee46e83e87cba9f69fb439a",
+      "translationHash": "12f48103b844be7629ee866aacfa2ef3b8838a6caa1ff019fff62e2ff6f72376",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "CLI Integration",
+          "id": "cli-integration"
+        },
+        {
+          "depth": 2,
+          "text": "Choose a mode",
+          "id": "choose-a-mode"
+        },
+        {
+          "depth": 2,
+          "text": "Print to stdout",
+          "id": "print-to-stdout"
+        },
+        {
+          "depth": 2,
+          "text": "Stream JSON events",
+          "id": "stream-json-events"
+        },
+        {
+          "depth": 2,
+          "text": "Control Pi with RPC",
+          "id": "control-pi-with-rpc"
+        },
+        {
+          "depth": 2,
+          "text": "Fork and rebrand Pi",
+          "id": "fork-and-rebrand-pi"
+        },
+        {
+          "depth": 2,
+          "text": "Examples and references",
+          "id": "examples-and-references"
+        }
+      ],
+      "imageAlts": {},
+      "title": "CLI 統合",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:11:46.673Z"
+    },
+    "sdk.md": {
+      "sourceHash": "1c223307fd9d44a643a175b7673b61a5597970dd91c29f8e25f9a6cf7e83bcc3",
+      "translationHash": "05f4905e2ce249fc25c86b3a622a34f607e8ecd7825dfd56890e1cee619eaef4",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "SDK",
+          "id": "sdk"
+        },
+        {
+          "depth": 2,
+          "text": "Session lifecycle",
+          "id": "session-lifecycle"
+        },
+        {
+          "depth": 3,
+          "text": "Session storage",
+          "id": "session-storage"
+        },
+        {
+          "depth": 2,
+          "text": "Prompting",
+          "id": "prompting"
+        },
+        {
+          "depth": 2,
+          "text": "Subscribing to events",
+          "id": "subscribing-to-events"
+        },
+        {
+          "depth": 2,
+          "text": "Configuring a session",
+          "id": "configuring-a-session"
+        },
+        {
+          "depth": 2,
+          "text": "Examples",
+          "id": "examples"
+        },
+        {
+          "depth": 2,
+          "text": "Resources",
+          "id": "resources"
+        }
+      ],
+      "imageAlts": {},
+      "title": "SDK",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:21:13.482Z"
+    },
+    "cli.md": {
+      "sourceHash": "bcd1c597c2891f06b75a58d0edbbf3d0f368a0fddc9a6a7d0e56e6ed11a728b0",
+      "translationHash": "1e9343d6a727585d8294107aa3387525d6f51cd06d2e049811df123a410f249a",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Command Line",
+          "id": "command-line"
+        },
+        {
+          "depth": 2,
+          "text": "Invocation and output",
+          "id": "invocation-and-output"
+        },
+        {
+          "depth": 2,
+          "text": "Models",
+          "id": "models"
+        },
+        {
+          "depth": 2,
+          "text": "Sessions",
+          "id": "sessions"
+        },
+        {
+          "depth": 2,
+          "text": "Tools",
+          "id": "tools"
+        },
+        {
+          "depth": 3,
+          "text": "Enable codemode",
+          "id": "enable-codemode"
+        },
+        {
+          "depth": 3,
+          "text": "How codemode works",
+          "id": "how-codemode-works"
+        },
+        {
+          "depth": 3,
+          "text": "Tool search",
+          "id": "tool-search"
+        },
+        {
+          "depth": 2,
+          "text": "Resources",
+          "id": "resources"
+        },
+        {
+          "depth": 2,
+          "text": "Prompts and process",
+          "id": "prompts-and-process"
+        },
+        {
+          "depth": 2,
+          "text": "Package commands",
+          "id": "package-commands"
+        },
+        {
+          "depth": 3,
+          "text": "Common tasks",
+          "id": "common-tasks"
+        },
+        {
+          "depth": 3,
+          "text": "Update Pi or packages",
+          "id": "update-pi-or-packages"
+        },
+        {
+          "depth": 3,
+          "text": "Aliases and command options",
+          "id": "aliases-and-command-options"
+        },
+        {
+          "depth": 2,
+          "text": "Credential commands",
+          "id": "credential-commands"
+        },
+        {
+          "depth": 2,
+          "text": "MCP commands",
+          "id": "mcp-commands"
+        }
+      ],
+      "imageAlts": {},
+      "title": "コマンドライン",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:24:04.848Z"
+    },
+    "slash-commands.md": {
+      "sourceHash": "d7e1db36e9186ff146a6c27de31fe169671f52cb6f7b93e1bf8d7fe76209a79c",
+      "translationHash": "5afafb207500b0a8fe2f5d7213eeaf03eead02fc258236dac7d673980c19942f",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Slash commands",
+          "id": "slash-commands"
+        },
+        {
+          "depth": 2,
+          "text": "Models and settings",
+          "id": "models-and-settings"
+        },
+        {
+          "depth": 2,
+          "text": "Sessions and context",
+          "id": "sessions-and-context"
+        },
+        {
+          "depth": 2,
+          "text": "Export and share",
+          "id": "export-and-share"
+        },
+        {
+          "depth": 2,
+          "text": "Runtime and project",
+          "id": "runtime-and-project"
+        },
+        {
+          "depth": 2,
+          "text": "Commands added by resources",
+          "id": "commands-added-by-resources"
+        }
+      ],
+      "imageAlts": {},
+      "title": "スラッシュコマンド",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:24:36.128Z"
+    },
+    "settings.md": {
+      "sourceHash": "27ebc5adf190dccf086e032240c48d9806f919e3c551f41c6c4d1341b0379c27",
+      "translationHash": "a610e3d71f432e5219e9f66328017d117f98c6c8bf48ca1afb5aa114632ff678",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Settings Reference",
+          "id": "settings-reference"
+        },
+        {
+          "depth": 2,
+          "text": "Model and thinking",
+          "id": "model-and-thinking"
+        },
+        {
+          "depth": 2,
+          "text": "Interaction",
+          "id": "interaction"
+        },
+        {
+          "depth": 2,
+          "text": "Tools",
+          "id": "tools"
+        },
+        {
+          "depth": 2,
+          "text": "Sessions and context",
+          "id": "sessions-and-context"
+        },
+        {
+          "depth": 3,
+          "text": "Compaction",
+          "id": "compaction"
+        },
+        {
+          "depth": 3,
+          "text": "Branch summaries",
+          "id": "branch-summaries"
+        },
+        {
+          "depth": 2,
+          "text": "Terminal and display",
+          "id": "terminal-and-display"
+        },
+        {
+          "depth": 2,
+          "text": "Network and retries",
+          "id": "network-and-retries"
+        },
+        {
+          "depth": 2,
+          "text": "Shell",
+          "id": "shell"
+        },
+        {
+          "depth": 2,
+          "text": "Resources",
+          "id": "resources"
+        },
+        {
+          "depth": 2,
+          "text": "Updates, telemetry, and warnings",
+          "id": "updates-telemetry-and-warnings"
+        }
+      ],
+      "imageAlts": {},
+      "title": "設定リファレンス",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:26:49.269Z"
+    },
+    "environment-variables.md": {
+      "sourceHash": "f4b513dd62fc5200d7556c69d634b1bf75aa77b8b562a2e6329dc34954bcd671",
+      "translationHash": "536fde100420358002106bdf3a613f2c52ea37f852c90b6ddf61a5826d44fa59",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Environment Variables",
+          "id": "environment-variables"
+        },
+        {
+          "depth": 2,
+          "text": "Process Marker",
+          "id": "process-marker"
+        },
+        {
+          "depth": 2,
+          "text": "Shell Tool Session Environment",
+          "id": "shell-tool-session-environment"
+        },
+        {
+          "depth": 3,
+          "text": "Custom Shell Tools",
+          "id": "custom-shell-tools"
+        },
+        {
+          "depth": 2,
+          "text": "Pi Process Configuration",
+          "id": "pi-process-configuration"
+        }
+      ],
+      "imageAlts": {},
+      "title": "環境変数",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:27:44.231Z"
+    },
+    "keybindings.md": {
+      "sourceHash": "658674bd83a4e71a76f8efcb1ab88f57f2e98adf40c71683807fed20f4667c6b",
+      "translationHash": "db291ec8ac5af8d4601bc9fe3c40a789a9de7006fd2f22b8731321c63780a5a5",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Keybindings Reference",
+          "id": "keybindings-reference"
+        },
+        {
+          "depth": 2,
+          "text": "Assign keybindings",
+          "id": "assign-keybindings"
+        },
+        {
+          "depth": 2,
+          "text": "Key syntax",
+          "id": "key-syntax"
+        },
+        {
+          "depth": 2,
+          "text": "Actions",
+          "id": "actions"
+        },
+        {
+          "depth": 3,
+          "text": "Terminal UI",
+          "id": "terminal-ui"
+        },
+        {
+          "depth": 4,
+          "text": "Cursor movement",
+          "id": "cursor-movement"
+        },
+        {
+          "depth": 4,
+          "text": "Text editing",
+          "id": "text-editing"
+        },
+        {
+          "depth": 4,
+          "text": "Input and selection",
+          "id": "input-and-selection"
+        },
+        {
+          "depth": 4,
+          "text": "Fullscreen",
+          "id": "fullscreen"
+        },
+        {
+          "depth": 3,
+          "text": "Application",
+          "id": "application"
+        },
+        {
+          "depth": 3,
+          "text": "Sessions",
+          "id": "sessions"
+        },
+        {
+          "depth": 3,
+          "text": "Models and Thinking",
+          "id": "models-and-thinking"
+        },
+        {
+          "depth": 3,
+          "text": "Display and Message Queue",
+          "id": "display-and-message-queue"
+        },
+        {
+          "depth": 3,
+          "text": "Tree Navigation",
+          "id": "tree-navigation"
+        },
+        {
+          "depth": 3,
+          "text": "Scoped Models Selector",
+          "id": "scoped-models-selector"
+        }
+      ],
+      "imageAlts": {},
+      "title": "キーバインドリファレンス",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:29:59.105Z"
+    },
+    "providers.md": {
+      "sourceHash": "caeea1b2cbf70dfb9a4065a81d43a9b6302d89b561a40512a5af0869f6c84437",
+      "translationHash": "e50009d94bc73db8d083a2f8fa57be39496f1563cb7b2753b9a68c1bea7a59b9",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Provider Authentication",
+          "id": "provider-authentication"
+        },
+        {
+          "depth": 2,
+          "text": "Authenticate interactively",
+          "id": "authenticate-interactively"
+        },
+        {
+          "depth": 2,
+          "text": "Use an API key from the environment",
+          "id": "use-an-api-key-from-the-environment"
+        },
+        {
+          "depth": 2,
+          "text": "Load an API key from a command",
+          "id": "load-an-api-key-from-a-command"
+        },
+        {
+          "depth": 2,
+          "text": "Cloud Providers",
+          "id": "cloud-providers"
+        },
+        {
+          "depth": 3,
+          "text": "Azure OpenAI",
+          "id": "azure-openai"
+        },
+        {
+          "depth": 3,
+          "text": "Amazon Bedrock",
+          "id": "amazon-bedrock"
+        },
+        {
+          "depth": 3,
+          "text": "Cloudflare AI Gateway",
+          "id": "cloudflare-ai-gateway"
+        },
+        {
+          "depth": 3,
+          "text": "Cloudflare Workers AI",
+          "id": "cloudflare-workers-ai"
+        },
+        {
+          "depth": 3,
+          "text": "Google Vertex AI",
+          "id": "google-vertex-ai"
+        }
+      ],
+      "imageAlts": {},
+      "title": "プロバイダー認証",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:30:51.909Z"
+    },
+    "session-format.md": {
+      "sourceHash": "4f8fc42179b332bcf71fe4c85cc95d914853ff7486d68742954a45316b512a4a",
+      "translationHash": "30e27b86a3b872f173a5c4a1a0e32c196694591ffe9f8dc121cfb68a84a68212",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Session File Format",
+          "id": "session-file-format"
+        },
+        {
+          "depth": 2,
+          "text": "File Location",
+          "id": "file-location"
+        },
+        {
+          "depth": 2,
+          "text": "Deleting Sessions",
+          "id": "deleting-sessions"
+        },
+        {
+          "depth": 2,
+          "text": "Session Version",
+          "id": "session-version"
+        },
+        {
+          "depth": 2,
+          "text": "Source Files",
+          "id": "source-files"
+        },
+        {
+          "depth": 2,
+          "text": "Messages",
+          "id": "messages"
+        },
+        {
+          "depth": 2,
+          "text": "Entry Base",
+          "id": "entry-base"
+        },
+        {
+          "depth": 2,
+          "text": "Entry Types",
+          "id": "entry-types"
+        },
+        {
+          "depth": 3,
+          "text": "SessionHeader",
+          "id": "sessionheader"
+        },
+        {
+          "depth": 3,
+          "text": "SessionMessageEntry",
+          "id": "sessionmessageentry"
+        },
+        {
+          "depth": 3,
+          "text": "ModelChangeEntry",
+          "id": "modelchangeentry"
+        },
+        {
+          "depth": 3,
+          "text": "ThinkingLevelChangeEntry",
+          "id": "thinkinglevelchangeentry"
+        },
+        {
+          "depth": 3,
+          "text": "UsageEntry",
+          "id": "usageentry"
+        },
+        {
+          "depth": 3,
+          "text": "CompactionEntry",
+          "id": "compactionentry"
+        },
+        {
+          "depth": 3,
+          "text": "ContextEditEntry",
+          "id": "contexteditentry"
+        },
+        {
+          "depth": 3,
+          "text": "BranchSummaryEntry",
+          "id": "branchsummaryentry"
+        },
+        {
+          "depth": 3,
+          "text": "CustomEntry",
+          "id": "customentry"
+        },
+        {
+          "depth": 3,
+          "text": "CustomMessageEntry",
+          "id": "custommessageentry"
+        },
+        {
+          "depth": 3,
+          "text": "LabelEntry",
+          "id": "labelentry"
+        },
+        {
+          "depth": 3,
+          "text": "SessionInfoEntry",
+          "id": "sessioninfoentry"
+        },
+        {
+          "depth": 2,
+          "text": "Tree Structure",
+          "id": "tree-structure"
+        },
+        {
+          "depth": 2,
+          "text": "Context Building",
+          "id": "context-building"
+        },
+        {
+          "depth": 2,
+          "text": "Parsing Example",
+          "id": "parsing-example"
+        }
+      ],
+      "imageAlts": {},
+      "title": "セッションファイル形式",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:32:24.036Z"
+    },
+    "compaction.md": {
+      "sourceHash": "190b8c651148504613aea98b0637807c536ed0362948fda1bcd1ae137d75ff4a",
+      "translationHash": "9c2be3941bf887b2bce928dfcaa057a2f5c1f9ad8fb39ab6773ecebfdfc83598",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Compaction Reference",
+          "id": "compaction-reference"
+        },
+        {
+          "depth": 2,
+          "text": "Overview",
+          "id": "overview"
+        },
+        {
+          "depth": 2,
+          "text": "Compaction",
+          "id": "compaction"
+        },
+        {
+          "depth": 3,
+          "text": "When It Triggers",
+          "id": "when-it-triggers"
+        },
+        {
+          "depth": 3,
+          "text": "How It Works",
+          "id": "how-it-works"
+        },
+        {
+          "depth": 3,
+          "text": "Overflow and Length Recovery Ordering",
+          "id": "overflow-and-length-recovery-ordering"
+        },
+        {
+          "depth": 3,
+          "text": "Split user-message spans",
+          "id": "split-user-message-spans"
+        },
+        {
+          "depth": 3,
+          "text": "Cut Point Rules",
+          "id": "cut-point-rules"
+        },
+        {
+          "depth": 3,
+          "text": "CompactionEntry Structure",
+          "id": "compactionentry-structure"
+        },
+        {
+          "depth": 2,
+          "text": "Branch Summarization",
+          "id": "branch-summarization"
+        },
+        {
+          "depth": 3,
+          "text": "When It Triggers",
+          "id": "when-it-triggers-1"
+        },
+        {
+          "depth": 3,
+          "text": "How It Works",
+          "id": "how-it-works-1"
+        },
+        {
+          "depth": 3,
+          "text": "Cumulative File Tracking",
+          "id": "cumulative-file-tracking"
+        },
+        {
+          "depth": 3,
+          "text": "BranchSummaryEntry Structure",
+          "id": "branchsummaryentry-structure"
+        },
+        {
+          "depth": 2,
+          "text": "Summary Format",
+          "id": "summary-format"
+        },
+        {
+          "depth": 3,
+          "text": "Message Serialization",
+          "id": "message-serialization"
+        },
+        {
+          "depth": 2,
+          "text": "Custom Summarization via Extensions",
+          "id": "custom-summarization-via-extensions"
+        },
+        {
+          "depth": 3,
+          "text": "session_before_compact",
+          "id": "session_before_compact"
+        },
+        {
+          "depth": 4,
+          "text": "Converting Messages to Text",
+          "id": "converting-messages-to-text"
+        },
+        {
+          "depth": 3,
+          "text": "session_compact_failed",
+          "id": "session_compact_failed"
+        },
+        {
+          "depth": 3,
+          "text": "session_before_tree",
+          "id": "session_before_tree"
+        },
+        {
+          "depth": 2,
+          "text": "Settings",
+          "id": "settings"
+        },
+        {
+          "depth": 3,
+          "text": "Per-model overrides",
+          "id": "per-model-overrides"
+        }
+      ],
+      "imageAlts": {},
+      "title": "圧縮リファレンス",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:35:07.592Z"
+    },
+    "json.md": {
+      "sourceHash": "839a2a2da8112298a7f8870afa71d1998db2d43b8f68c9c179a0c696b6477a5e",
+      "translationHash": "42c8e8b12836ac38d3a9d99425d5584471737d389768d3e6dcab8e7dcc2e1291",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "JSON Event Stream",
+          "id": "json-event-stream"
+        },
+        {
+          "depth": 2,
+          "text": "Framing and process I/O",
+          "id": "framing-and-process-io"
+        },
+        {
+          "depth": 2,
+          "text": "Session header",
+          "id": "session-header"
+        },
+        {
+          "depth": 2,
+          "text": "Event sequence",
+          "id": "event-sequence"
+        },
+        {
+          "depth": 2,
+          "text": "Agent and turn events",
+          "id": "agent-and-turn-events"
+        },
+        {
+          "depth": 2,
+          "text": "Message events",
+          "id": "message-events"
+        },
+        {
+          "depth": 3,
+          "text": "Reconstruct streaming messages",
+          "id": "reconstruct-streaming-messages"
+        },
+        {
+          "depth": 2,
+          "text": "Tool execution events",
+          "id": "tool-execution-events"
+        },
+        {
+          "depth": 2,
+          "text": "Queue and state events",
+          "id": "queue-and-state-events"
+        },
+        {
+          "depth": 2,
+          "text": "Compaction events",
+          "id": "compaction-events"
+        },
+        {
+          "depth": 2,
+          "text": "Retry events",
+          "id": "retry-events"
+        },
+        {
+          "depth": 2,
+          "text": "RPC-only events",
+          "id": "rpc-only-events"
+        },
+        {
+          "depth": 2,
+          "text": "TypeScript types",
+          "id": "typescript-types"
+        },
+        {
+          "depth": 2,
+          "text": "Example",
+          "id": "example"
+        }
+      ],
+      "imageAlts": {},
+      "title": "JSONイベントストリーム",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:36:29.429Z"
+    },
+    "rpc.md": {
+      "sourceHash": "37a03d180115460a0a275022f4aeabef1e5345458df6a9b6e8a6de18474de720",
+      "translationHash": "c92feda3859b9110beb8db92c29cdecb75bf2ca073cf86ffff9338ced6feb41b",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "RPC Mode",
+          "id": "rpc-mode"
+        },
+        {
+          "depth": 2,
+          "text": "Start RPC mode",
+          "id": "start-rpc-mode"
+        },
+        {
+          "depth": 2,
+          "text": "Protocol records",
+          "id": "protocol-records"
+        },
+        {
+          "depth": 3,
+          "text": "Correlate commands and responses",
+          "id": "correlate-commands-and-responses"
+        },
+        {
+          "depth": 2,
+          "text": "Framing",
+          "id": "framing"
+        },
+        {
+          "depth": 2,
+          "text": "Run lifecycle",
+          "id": "run-lifecycle"
+        },
+        {
+          "depth": 2,
+          "text": "Errors",
+          "id": "errors"
+        },
+        {
+          "depth": 2,
+          "text": "Shutdown",
+          "id": "shutdown"
+        },
+        {
+          "depth": 2,
+          "text": "Minimal client",
+          "id": "minimal-client"
+        },
+        {
+          "depth": 2,
+          "text": "Reference",
+          "id": "reference"
+        },
+        {
+          "depth": 2,
+          "text": "Moved reference anchors",
+          "id": "moved-reference-anchors"
+        }
+      ],
+      "imageAlts": {},
+      "title": "RPC モード",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:37:42.048Z"
+    },
+    "rpc-commands.md": {
+      "sourceHash": "4deeee367852f4633ef594bc079f9e9fb14640a4e3ba8a69b7c89b6f54740838",
+      "translationHash": "9042533373bda1a1bebb697af13da30b30e971dde05907b9c7a396645f552108",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "RPC Commands",
+          "id": "rpc-commands"
+        },
+        {
+          "depth": 2,
+          "text": "Prompting",
+          "id": "prompting"
+        },
+        {
+          "depth": 3,
+          "text": "prompt",
+          "id": "prompt"
+        },
+        {
+          "depth": 3,
+          "text": "steer",
+          "id": "steer"
+        },
+        {
+          "depth": 3,
+          "text": "follow_up",
+          "id": "follow_up"
+        },
+        {
+          "depth": 3,
+          "text": "abort",
+          "id": "abort"
+        },
+        {
+          "depth": 3,
+          "text": "clear_queue",
+          "id": "clear_queue"
+        },
+        {
+          "depth": 3,
+          "text": "new_session",
+          "id": "new_session"
+        },
+        {
+          "depth": 2,
+          "text": "State",
+          "id": "state"
+        },
+        {
+          "depth": 3,
+          "text": "get_state",
+          "id": "get_state"
+        },
+        {
+          "depth": 3,
+          "text": "get_messages",
+          "id": "get_messages"
+        },
+        {
+          "depth": 2,
+          "text": "Model",
+          "id": "model"
+        },
+        {
+          "depth": 3,
+          "text": "set_model",
+          "id": "set_model"
+        },
+        {
+          "depth": 3,
+          "text": "cycle_model",
+          "id": "cycle_model"
+        },
+        {
+          "depth": 3,
+          "text": "get_available_models",
+          "id": "get_available_models"
+        },
+        {
+          "depth": 2,
+          "text": "Thinking",
+          "id": "thinking"
+        },
+        {
+          "depth": 3,
+          "text": "set_thinking_level",
+          "id": "set_thinking_level"
+        },
+        {
+          "depth": 3,
+          "text": "cycle_thinking_level",
+          "id": "cycle_thinking_level"
+        },
+        {
+          "depth": 3,
+          "text": "get_available_thinking_levels",
+          "id": "get_available_thinking_levels"
+        },
+        {
+          "depth": 2,
+          "text": "Queue modes",
+          "id": "queue-modes"
+        },
+        {
+          "depth": 3,
+          "text": "set_steering_mode",
+          "id": "set_steering_mode"
+        },
+        {
+          "depth": 3,
+          "text": "set_follow_up_mode",
+          "id": "set_follow_up_mode"
+        },
+        {
+          "depth": 2,
+          "text": "Compaction",
+          "id": "compaction"
+        },
+        {
+          "depth": 3,
+          "text": "compact",
+          "id": "compact"
+        },
+        {
+          "depth": 3,
+          "text": "set_auto_compaction",
+          "id": "set_auto_compaction"
+        },
+        {
+          "depth": 2,
+          "text": "Retry",
+          "id": "retry"
+        },
+        {
+          "depth": 3,
+          "text": "set_auto_retry",
+          "id": "set_auto_retry"
+        },
+        {
+          "depth": 3,
+          "text": "abort_retry",
+          "id": "abort_retry"
+        },
+        {
+          "depth": 2,
+          "text": "Bash",
+          "id": "bash"
+        },
+        {
+          "depth": 3,
+          "text": "bash",
+          "id": "bash-1"
+        },
+        {
+          "depth": 3,
+          "text": "abort_bash",
+          "id": "abort_bash"
+        },
+        {
+          "depth": 2,
+          "text": "Session",
+          "id": "session"
+        },
+        {
+          "depth": 3,
+          "text": "get_session_stats",
+          "id": "get_session_stats"
+        },
+        {
+          "depth": 3,
+          "text": "export_html",
+          "id": "export_html"
+        },
+        {
+          "depth": 3,
+          "text": "switch_session",
+          "id": "switch_session"
+        },
+        {
+          "depth": 3,
+          "text": "fork",
+          "id": "fork"
+        },
+        {
+          "depth": 3,
+          "text": "clone",
+          "id": "clone"
+        },
+        {
+          "depth": 3,
+          "text": "get_fork_messages",
+          "id": "get_fork_messages"
+        },
+        {
+          "depth": 3,
+          "text": "get_entries",
+          "id": "get_entries"
+        },
+        {
+          "depth": 3,
+          "text": "get_tree",
+          "id": "get_tree"
+        },
+        {
+          "depth": 3,
+          "text": "get_last_assistant_text",
+          "id": "get_last_assistant_text"
+        },
+        {
+          "depth": 3,
+          "text": "set_session_name",
+          "id": "set_session_name"
+        },
+        {
+          "depth": 2,
+          "text": "Discoverable commands",
+          "id": "discoverable-commands"
+        },
+        {
+          "depth": 3,
+          "text": "get_commands",
+          "id": "get_commands"
+        },
+        {
+          "depth": 2,
+          "text": "Model object",
+          "id": "model-object"
+        }
+      ],
+      "imageAlts": {},
+      "title": "RPC コマンド",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:40:03.864Z"
+    },
+    "rpc-extension-ui.md": {
+      "sourceHash": "3c6f2c6edfc8b1ace6642343727aef97a7e9234c85509850921b52d6ff09a48e",
+      "translationHash": "78345e4deb2902d345c1cdcaaa669214c76abad9f42a8d3c7619e21cbc9a145f",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "RPC Extension UI",
+          "id": "rpc-extension-ui"
+        },
+        {
+          "depth": 2,
+          "text": "Limitations",
+          "id": "limitations"
+        },
+        {
+          "depth": 2,
+          "text": "Requests from Pi",
+          "id": "requests-from-pi"
+        },
+        {
+          "depth": 3,
+          "text": "select",
+          "id": "select"
+        },
+        {
+          "depth": 3,
+          "text": "confirm",
+          "id": "confirm"
+        },
+        {
+          "depth": 3,
+          "text": "input",
+          "id": "input"
+        },
+        {
+          "depth": 3,
+          "text": "editor",
+          "id": "editor"
+        },
+        {
+          "depth": 3,
+          "text": "notify",
+          "id": "notify"
+        },
+        {
+          "depth": 3,
+          "text": "setStatus",
+          "id": "setstatus"
+        },
+        {
+          "depth": 3,
+          "text": "setWidget",
+          "id": "setwidget"
+        },
+        {
+          "depth": 3,
+          "text": "setTitle",
+          "id": "settitle"
+        },
+        {
+          "depth": 3,
+          "text": "set_editor_text",
+          "id": "set_editor_text"
+        },
+        {
+          "depth": 2,
+          "text": "Responses to Pi",
+          "id": "responses-to-pi"
+        },
+        {
+          "depth": 3,
+          "text": "Value response (select, input, editor)",
+          "id": "value-response-select-input-editor"
+        },
+        {
+          "depth": 3,
+          "text": "Confirmation response (confirm)",
+          "id": "confirmation-response-confirm"
+        },
+        {
+          "depth": 3,
+          "text": "Cancellation response (any dialog)",
+          "id": "cancellation-response-any-dialog"
+        },
+        {
+          "depth": 2,
+          "text": "Example",
+          "id": "example"
+        }
+      ],
+      "imageAlts": {},
+      "title": "RPC 拡張機能 UI",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:40:57.191Z"
+    },
+    "message-types.md": {
+      "sourceHash": "c642db2a93e6433aadde1675f51e3c8b51520d9a6ee1ac805802e635aab10413",
+      "translationHash": "307db87e96e090bbf86ff2e66bd1d0ffc0cce99ce2f61fa9caf0e715aff99711",
+      "sourceCommit": "0f8740bb65638180403a225ad7ec4d0cc1f8dedf",
+      "headings": [
+        {
+          "depth": 1,
+          "text": "Message Types",
+          "id": "message-types"
+        },
+        {
+          "depth": 2,
+          "text": "Content blocks",
+          "id": "content-blocks"
+        },
+        {
+          "depth": 3,
+          "text": "TextContent",
+          "id": "textcontent"
+        },
+        {
+          "depth": 3,
+          "text": "ImageContent",
+          "id": "imagecontent"
+        },
+        {
+          "depth": 3,
+          "text": "ThinkingContent",
+          "id": "thinkingcontent"
+        },
+        {
+          "depth": 3,
+          "text": "ToolCall",
+          "id": "toolcall"
+        },
+        {
+          "depth": 2,
+          "text": "Usage",
+          "id": "usage"
+        },
+        {
+          "depth": 2,
+          "text": "Base messages",
+          "id": "base-messages"
+        },
+        {
+          "depth": 3,
+          "text": "SystemMessage",
+          "id": "systemmessage"
+        },
+        {
+          "depth": 3,
+          "text": "UserMessage",
+          "id": "usermessage"
+        },
+        {
+          "depth": 3,
+          "text": "AssistantMessage",
+          "id": "assistantmessage"
+        },
+        {
+          "depth": 3,
+          "text": "ToolResultMessage",
+          "id": "toolresultmessage"
+        },
+        {
+          "depth": 2,
+          "text": "Coding-agent messages",
+          "id": "coding-agent-messages"
+        },
+        {
+          "depth": 3,
+          "text": "BashExecutionMessage",
+          "id": "bashexecutionmessage"
+        },
+        {
+          "depth": 3,
+          "text": "CustomMessage",
+          "id": "custommessage"
+        },
+        {
+          "depth": 3,
+          "text": "BranchSummaryMessage",
+          "id": "branchsummarymessage"
+        },
+        {
+          "depth": 3,
+          "text": "CompactionSummaryMessage",
+          "id": "compactionsummarymessage"
+        },
+        {
+          "depth": 2,
+          "text": "AgentMessage union",
+          "id": "agentmessage-union"
+        }
+      ],
+      "imageAlts": {},
+      "title": "メッセージ型",
+      "review": {
+        "status": "passed",
+        "model": "gpt-5.6-sol"
+      },
+      "translatedAt": "2026-10-01T12:41:42.261Z"
+    }
+  }
+}

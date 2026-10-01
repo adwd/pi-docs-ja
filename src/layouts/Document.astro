@@ -1,0 +1,324 @@
+---
+import Navigation from '../components/Navigation.astro';
+import {
+  BASE,
+  provenance,
+  navigation,
+  pagePaths,
+  hrefFor,
+} from '../lib/content.mjs';
+import '../styles/site.css';
+const { path, html, toc, meta, description } = Astro.props;
+const index = pagePaths.indexOf(path),
+  previous = pagePaths[index - 1],
+  next = pagePaths[index + 1];
+const sourceUrl = `https://github.com/${provenance.repository}/blob/${meta.sourceCommit}/${provenance.docsPath}/${path}`;
+const originalUrl = `https://pi.dev/docs/latest${path === 'index.md' ? '' : '/' + path.replace(/\.md$/, '')}`;
+const date = new Intl.DateTimeFormat('ja-JP', {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  timeZone: 'Asia/Tokyo',
+}).format(new Date(meta.translatedAt));
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{meta.title} · Pi 日本語ドキュメント</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(hrefFor(path), Astro.site)} />
+    <link rel="alternate" hreflang="en" href={originalUrl} />
+    <link rel="icon" href={`${BASE}/favicon.svg`} type="image/svg+xml" />
+    <meta name="theme-color" content="#eeece6" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:title"
+      content={`${meta.title} · Pi 日本語ドキュメント`}
+    />
+    <meta property="og:description" content={description} />
+    <script is:inline>
+      try {
+        const theme = localStorage.getItem('pi-theme') || 'system';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme =
+          theme === 'system' ? 'light dark' : theme;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      本文へ移動
+    </a>
+    <header class="site-header">
+      <a
+        class="brand"
+        href={hrefFor('index.md')}
+        aria-label="Pi 日本語ドキュメント ホーム"
+      >
+        <span class="brand-pi">Pi</span>
+        <span class="brand-locale">日本語</span>
+      </a>
+      <nav aria-label="サイトナビゲーション">
+        <a class="current" href={hrefFor('index.md')}>
+          ドキュメント
+        </a>
+        <a href="https://pi.dev/changelog">更新履歴 ↗</a>
+        <a href="https://pi.dev">公式サイト ↗</a>
+        <a href="https://github.com/adwd/pi-docs-ja">GitHub ↗</a>
+      </nav>
+      <button id="theme-toggle" type="button" aria-label="表示テーマを切り替え">
+        ◐
+      </button>
+    </header>
+    <div class="site-grid">
+      <aside class="sidebar">
+        <details id="navigation-panel" open>
+          <summary>
+            ドキュメント <span>⌄</span>
+          </summary>
+          <nav aria-label="ドキュメントの目次">
+            <Navigation nodes={navigation.navigation} current={path} />
+          </nav>
+          <div class="sidebar-footer">
+            <span class="status-dot"></span>本家の原稿から翻訳
+          </div>
+        </details>
+      </aside>
+      <div class="main-column">
+        <button id="search-open" class="search-button" type="button">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 5 5" />
+          </svg>
+          <span>ドキュメントを検索…</span>
+          <kbd>⌘ K</kbd>
+        </button>
+        <main id="main" class="document" data-pagefind-body>
+          <div class="document-heading">
+            <div>
+              <p class="eyebrow" data-pagefind-ignore>
+                PI DOCUMENTATION / 日本語
+              </p>
+              <h1 data-pagefind-meta="title">{meta.title}</h1>
+            </div>
+            <a class="original-link" href={originalUrl} data-pagefind-ignore>
+              原文を読む ↗
+            </a>
+          </div>
+          <div class="translation-note" data-pagefind-ignore>
+            <span>非公式日本語訳</span>
+            <span>機械翻訳・対訳チェック済み</span>
+            <span>更新 {date}</span>
+          </div>
+          <div class="prose" set:html={html} />
+          <nav
+            class="page-pagination"
+            aria-label="前後のページ"
+            data-pagefind-ignore
+          >
+            {previous ? (
+              <a href={hrefFor(previous)}>
+                <small>← 前のページ</small>
+                <span>{provenance.pages[previous].title}</span>
+              </a>
+            ) : (
+              <span />
+            )}
+            {next ? (
+              <a class="next" href={hrefFor(next)}>
+                <small>次のページ →</small>
+                <span>{provenance.pages[next].title}</span>
+              </a>
+            ) : (
+              <span />
+            )}
+          </nav>
+          <footer class="document-footer" data-pagefind-ignore>
+            <p>
+              このサイトはPiの非公式日本語訳です。内容に疑問がある場合は原文をご確認ください。
+            </p>
+            <div>
+              <a href={sourceUrl}>翻訳元 {meta.sourceCommit.slice(0, 7)} ↗</a>
+              <a
+                href={`https://github.com/adwd/pi-docs-ja/blob/main/content/ja/${path}`}
+              >
+                日本語Markdown ↗
+              </a>
+              <a href="https://github.com/adwd/pi-docs-ja/issues/new">
+                誤訳を報告 ↗
+              </a>
+            </div>
+          </footer>
+        </main>
+      </div>
+      <aside class="toc">
+        <h2>このページの内容</h2>
+        <nav aria-label="ページ内目次">
+          {toc
+            .filter((h) => h.depth <= 3)
+            .map((h) => (
+              <a class:list={{ nested: h.depth === 3 }} href={`#${h.id}`}>
+                {h.text}
+              </a>
+            ))}
+        </nav>
+        <a class="back-top" href="#main">
+          ページ先頭へ ↑
+        </a>
+      </aside>
+    </div>
+    <footer class="site-footer">
+      <span>Pi · 日本語ドキュメント</span>
+      <span>
+        原文 © Mario Zechner / Earendil & Contributors ·{' '}
+        <a href="https://github.com/adwd/pi-docs-ja/blob/main/LICENSE-upstream">
+          MIT License
+        </a>
+      </span>
+      <a href="https://github.com/adwd/pi-docs-ja">翻訳プロジェクト ↗</a>
+    </footer>
+    <dialog id="search-dialog" aria-label="ドキュメントを検索">
+      <div class="search-dialog-header">
+        <label for="search-input">ドキュメントを検索</label>
+        <button id="search-close" type="button" aria-label="検索を閉じる">
+          閉じる <kbd>Esc</kbd>
+        </button>
+      </div>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="例：セッション、MCP、設定"
+        autocomplete="off"
+      />
+      <p id="search-status" role="status">
+        日本語やコマンド名で検索できます。
+      </p>
+      <div id="search-results"></div>
+    </dialog>
+    <script define:vars={{ base: BASE }}>
+      const dialog = document.querySelector('#search-dialog'),
+        input = document.querySelector('#search-input'),
+        results = document.querySelector('#search-results'),
+        status = document.querySelector('#search-status');
+      const openSearch = () => {
+        dialog.showModal();
+        input.focus();
+      };
+      document
+        .querySelector('#search-open')
+        .addEventListener('click', openSearch);
+      document
+        .querySelector('#search-close')
+        .addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) {
+          const r = dialog.getBoundingClientRect();
+          if (
+            e.clientX < r.left ||
+            e.clientX > r.right ||
+            e.clientY < r.top ||
+            e.clientY > r.bottom
+          )
+            dialog.close();
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          openSearch();
+        }
+      });
+      let pagefind,
+        pending,
+        searchVersion = 0;
+      input.addEventListener('input', () => {
+        clearTimeout(pending);
+        const version = ++searchVersion;
+        pending = setTimeout(async () => {
+          const q = input.value.trim();
+          results.replaceChildren();
+          if (!q) {
+            status.textContent = '日本語やコマンド名で検索できます。';
+            return;
+          }
+          status.textContent = '検索しています…';
+          try {
+            pagefind ||= await import(base + '/pagefind/pagefind.js');
+            const response = await pagefind.search(q);
+            const found = await Promise.all(
+              response.results.slice(0, 12).map((r) => r.data()),
+            );
+            if (version !== searchVersion) return;
+            status.textContent = response.results.length
+              ? `${response.results.length}件見つかりました${response.results.length > found.length ? `（上位${found.length}件を表示）` : ''}`
+              : '一致するページがありません。別の語句をお試しください。';
+            for (const r of found) {
+              const a = document.createElement('a');
+              a.className = 'search-result';
+              a.href = r.url;
+              const title = document.createElement('strong');
+              title.textContent = r.meta.title;
+              const excerpt = document.createElement('p');
+              const parsed = new DOMParser().parseFromString(
+                r.excerpt,
+                'text/html',
+              );
+              excerpt.textContent = parsed.body.textContent;
+              a.append(title, excerpt);
+              results.append(a);
+            }
+          } catch {
+            if (version === searchVersion)
+              status.textContent =
+                '検索を読み込めませんでした。ページを再読み込みしてください。';
+          }
+        }, 180);
+      });
+      const themes = ['system', 'light', 'dark'];
+      document.querySelector('#theme-toggle').addEventListener('click', (e) => {
+        const current = document.documentElement.dataset.theme || 'system',
+          theme = themes[(themes.indexOf(current) + 1) % 3];
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme =
+          theme === 'system' ? 'light dark' : theme;
+        try {
+          localStorage.setItem('pi-theme', theme);
+        } catch {}
+        e.currentTarget.setAttribute(
+          'aria-label',
+          `表示テーマ：${{ system: '自動', light: 'ライト', dark: 'ダーク' }[theme]}。クリックして切り替え`,
+        );
+      });
+      document.querySelectorAll('.copy-code').forEach((button) =>
+        button.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(
+              button.closest('.code-block').querySelector('code').textContent,
+            );
+            button.textContent = 'コピー済み';
+            setTimeout(() => (button.textContent = 'コピー'), 1800);
+          } catch {
+            button.textContent = '選択してコピーしてください';
+          }
+        }),
+      );
+      const panel = document.querySelector('#navigation-panel');
+      const media = matchMedia('(max-width: 800px)');
+      const updateNavigation = () => (panel.open = !media.matches);
+      updateNavigation();
+      media.addEventListener('change', updateNavigation);
+    </script>
+  </body>
+</html>
