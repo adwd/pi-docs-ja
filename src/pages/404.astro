@@ -1,0 +1,22 @@
+---
+import { hrefFor, BASE } from '../lib/content.mjs';
+import '../styles/site.css';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>ページが見つかりません · Pi</title>
+  </head>
+  <body>
+    <main class="not-found">
+      <p class="eyebrow">404 / PI DOCUMENTATION</p>
+      <h1>ページが見つかりません</h1>
+      <p>ページが移動したか、URLが変更された可能性があります。</p>
+      <a href={hrefFor('index.md')}>ドキュメントのトップへ →</a>
+    </main>
+  </body>
+</html>

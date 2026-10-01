@@ -1,0 +1,208 @@
+{
+  "navigation": [
+    {
+      "title": "はじめに",
+      "items": [
+        {
+          "title": "概要",
+          "path": "index.md"
+        },
+        {
+          "title": "クイックスタート",
+          "path": "quickstart.md"
+        },
+        {
+          "title": "Pi の仕組み",
+          "path": "how-pi-works.md"
+        }
+      ]
+    },
+    {
+      "title": "ガイド",
+      "items": [
+        {
+          "title": "Pi を実行する",
+          "items": [
+            {
+              "title": "ターミナルで Pi を使用する",
+              "path": "usage.md"
+            },
+            {
+              "title": "モデルを選択する",
+              "path": "models.md"
+            },
+            {
+              "title": "セッションとコンテキストを管理する",
+              "path": "sessions.md"
+            },
+            {
+              "title": "Pi を安全に実行する",
+              "path": "security.md"
+            },
+            {
+              "title": "Pi を隔離する",
+              "path": "containerization.md"
+            },
+            {
+              "title": "ローカルモデルを実行する",
+              "path": "llama-cpp.md"
+            },
+            {
+              "title": "ターミナルを設定する",
+              "path": "terminal-setup.md"
+            },
+            {
+              "title": "シェルコマンドを設定する",
+              "path": "shell-aliases.md"
+            },
+            {
+              "title": "tmux で Pi を実行する",
+              "path": "tmux.md"
+            },
+            {
+              "title": "Windows で Pi を実行する",
+              "path": "windows.md"
+            },
+            {
+              "title": "Android で Pi を実行する",
+              "path": "termux.md"
+            }
+          ]
+        },
+        {
+          "title": "Pi をカスタマイズする",
+          "items": [
+            {
+              "title": "Pi を設定する",
+              "path": "configuration.md"
+            },
+            {
+              "title": "プロンプトテンプレートを作成する",
+              "path": "prompt-templates.md"
+            },
+            {
+              "title": "スキルを追加する",
+              "path": "skills.md"
+            },
+            {
+              "title": "テーマを作成する",
+              "path": "themes.md"
+            },
+            {
+              "title": "Pi パッケージを使用する",
+              "path": "packages.md"
+            },
+            {
+              "title": "MCP サーバーに接続する",
+              "path": "mcp.md"
+            }
+          ]
+        },
+        {
+          "title": "Pi を基盤に開発する",
+          "items": [
+            {
+              "title": "拡張機能を構築する",
+              "path": "extensions.md"
+            },
+            {
+              "title": "カスタムプロバイダーを追加する",
+              "path": "custom-provider.md"
+            },
+            {
+              "title": "仮想モデルでルーティングする",
+              "path": "virtual-models.md"
+            },
+            {
+              "title": "ターミナル UI コンポーネントを構築する",
+              "path": "tui.md"
+            },
+            {
+              "title": "CLI と統合する",
+              "path": "cli-integration.md"
+            },
+            {
+              "title": "SDK を使用する",
+              "path": "sdk.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "リファレンス",
+      "items": [
+        {
+          "title": "CLI",
+          "path": "cli.md"
+        },
+        {
+          "title": "スラッシュコマンド",
+          "path": "slash-commands.md"
+        },
+        {
+          "title": "設定",
+          "path": "settings.md"
+        },
+        {
+          "title": "環境変数",
+          "path": "environment-variables.md"
+        },
+        {
+          "title": "キーバインド",
+          "path": "keybindings.md"
+        },
+        {
+          "title": "プロバイダー認証",
+          "path": "providers.md"
+        },
+        {
+          "title": "セッションファイル形式",
+          "path": "session-format.md"
+        },
+        {
+          "title": "圧縮と分岐の要約",
+          "path": "compaction.md"
+        },
+        {
+          "title": "JSON イベントストリーム",
+          "path": "json.md"
+        },
+        {
+          "title": "RPC プロトコル",
+          "path": "rpc.md"
+        },
+        {
+          "title": "RPC コマンド",
+          "path": "rpc-commands.md"
+        },
+        {
+          "title": "RPC 拡張機能 UI",
+          "path": "rpc-extension-ui.md"
+        },
+        {
+          "title": "メッセージ型",
+          "path": "message-types.md"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "from": "development.md",
+      "to": "index.md"
+    },
+    {
+      "from": "session.md",
+      "to": "session-format.md"
+    },
+    {
+      "from": "tree.md",
+      "to": "sessions.md"
+    },
+    {
+      "from": "process-integration.md",
+      "to": "cli-integration.md"
+    }
+  ]
+}

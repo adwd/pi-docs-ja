@@ -1,0 +1,25 @@
+---
+import { hrefFor } from '../lib/content.mjs';
+const { nodes, current, level = 0 } = Astro.props;
+---
+
+{nodes.map((node) =>
+  node.path ? (
+    <a
+      class:list={['nav-link', { 'is-active': node.path === current }]}
+      href={hrefFor(node.path)}
+      aria-current={node.path === current ? 'page' : undefined}
+    >
+      {node.title}
+    </a>
+  ) : (
+    <section class:list={['nav-group', `nav-level-${level}`]}>
+      <h2>{node.title}</h2>
+      <Astro.self
+        nodes={node.items || []}
+        current={current}
+        level={level + 1}
+      />
+    </section>
+  ),
+)}

@@ -1,0 +1,42 @@
+---
+import Document from '../../../layouts/Document.astro';
+import {
+  pagePaths,
+  renderPage,
+  navigation,
+  hrefFor,
+} from '../../../lib/content.mjs';
+export function getStaticPaths() {
+  return [
+    ...pagePaths.map((path) => ({
+      params: {
+        slug: path === 'index.md' ? undefined : path.replace(/\.md$/, ''),
+      },
+      props: { path },
+    })),
+    ...(navigation.redirects || []).map((r) => ({
+      params: { slug: r.from.replace(/\.md$/, '') },
+      props: { redirect: r.to },
+    })),
+  ];
+}
+const { path, redirect } = Astro.props;
+const content = path ? await renderPage(path) : null;
+---
+
+{redirect ? (
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="refresh" content={`0;url=${hrefFor(redirect)}`} />
+      <link rel="canonical" href={new URL(hrefFor(redirect), Astro.site)} />
+      <meta name="robots" content="noindex" />
+      <title>ページを移動しました · Pi</title>
+    </head>
+    <body>
+      <a href={hrefFor(redirect)}>移動先のページを開く</a>
+    </body>
+  </html>
+) : (
+  <Document path={path} {...content} />
+)}
